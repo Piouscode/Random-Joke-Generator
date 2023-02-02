@@ -1,0 +1,41 @@
+@mixin box-sizing {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+@mixin font-size($size) {
+  font-size: calc($size / $base-font-size * 1rem);
+}
+
+@mixin text-align($align) {
+  text-align: $align;
+}
+
+@mixin font-weight($weight) {
+  font-weight: $weight;
+}
+
+@mixin background-color($color) {
+  background-color: $color;
+}
+
+@mixin padding($top-bottom, $left-right) {
+  padding: calc($top-bottom / $base-font-size * 1rem) calc($left-right / $base-font-size * 1rem);
+}
+
+@mixin margin($top-bottom) {
+  margin: calc($top-bottom / $base-font-size * 1rem) 0;
+}
+
+@mixin font-family($family) {
+  font-family: $family;
+}
+
+@mixin line-height($height) {
+  line-height: calc($height / $base-font-size * 1rem);
+}
+
+@mixin border-radius($radius) {
+  border-radius: calc($radius / $base-font-size * 1rem);
+}

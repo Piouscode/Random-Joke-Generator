@@ -1,0 +1,51 @@
+@import 'mixins';
+@import 'style_variables';
+
+body {
+  background-color: $background-color;
+  font-family: $font-family;
+  background-size: 50% 100%;
+  * :after :before {
+    @include box-sizing;
+  }
+  .wrapper-container {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    .wrapper {
+      @include background-color($primary-color);
+      width: 80vmin;
+      @include padding(50, 40);
+      border-radius: 1em;
+      border: 1px solid rgba(255, 255, 255, 0.5);
+      text-shadow: 0 0 1em rgba(0, 0, 0, 0.5);
+      background: rgba(255, 255, 255, 0.2);
+      span {
+        display: block;
+        @include text-align(center);
+        @include font-size(100);
+      }
+      p {
+        @include font-size(16);
+        @include font-weight($font-weight-light);
+        @include text-align(center);
+        word-wrap: break-word;
+        @include line-height(35);
+        color: $text-color;
+        @include margin(30);
+      }
+      button#btn {
+        display: block;
+        border: none;
+        @include font-size(18);
+        font-family: $font-family-secondary;
+        color: #301E67;
+        @include font-weight($font-weight-bold);
+        @include padding(12, 25);
+        @include border-radius(5);
+        cursor: pointer;
+        margin: 0 auto;
+      }
+    }
+  }
+}
