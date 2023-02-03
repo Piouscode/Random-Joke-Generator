@@ -10,7 +10,7 @@ This is a simple random joke generator that uses a random joke API from [jokeAPI
 
 # Getting Started
 To get started, you can simply clone this repository and open the index.html file in your browser. Ulternatively, 
-you can visit the live site [here](https://random-joke-generator-1.netlify.app/). Once the page loads, click on the 
+you can visit the live site [here](https://piouscode.github.io/Random-Joke-Generator/). Once the page loads, click on the 
 button to generate a random joke.
 
 # Technologies
